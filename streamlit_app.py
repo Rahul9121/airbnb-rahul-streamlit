@@ -53,9 +53,9 @@ def load_data():
     """Load and preprocess the data"""
     try:
         # Load datasets
-        df_listings = pd.read_csv('Airbnb listings EDA/CSIT 553_ Project 2_Analysis of airbnb(New York City)_Sai Rohini Godavarthi & Rahul Ega/listings.csv')
-        df_neighbourhoods = pd.read_csv('Airbnb listings EDA/CSIT 553_ Project 2_Analysis of airbnb(New York City)_Sai Rohini Godavarthi & Rahul Ega/neighbourhoods.csv')
-        df_reviews = pd.read_csv('Airbnb listings EDA/CSIT 553_ Project 2_Analysis of airbnb(New York City)_Sai Rohini Godavarthi & Rahul Ega/reviews.csv')
+        df_listings = pd.read_csv('data/listings.csv')
+        df_neighbourhoods = pd.read_csv('data/neighbourhoods.csv')
+        df_reviews = pd.read_csv('data/reviews.csv')
         
         # Data preprocessing (following the original notebook)
         # Drop columns with high missing values
