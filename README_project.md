@@ -62,49 +62,6 @@ This dashboard provides comprehensive analysis of NYC Airbnb data including:
    - Open http://localhost:8501
    - The app will automatically reload when you make changes
 
-## 🌐 Deployment Options
-
-### Option 1: Streamlit Community Cloud (Recommended)
-
-1. **Create GitHub Repository**
-   - Push this project to GitHub
-   - Make sure all files are included
-
-2. **Deploy on Streamlit Cloud**
-   - Go to [share.streamlit.io](https://share.streamlit.io)
-   - Connect your GitHub account
-   - Select your repository
-   - Deploy!
-
-3. **Your app will be live at**: `https://share.streamlit.io/[username]/[repo-name]/main/streamlit_app.py`
-
-### Option 2: Heroku
-
-1. **Create additional files**:
-   ```bash
-   # Create Procfile
-   echo "web: sh setup.sh && streamlit run streamlit_app.py" > Procfile
-   
-   # Create setup.sh
-   echo "mkdir -p ~/.streamlit/
-   echo \"[server]
-   headless = true
-   port = \$PORT
-   enableCORS = false
-   \" > ~/.streamlit/config.toml" > setup.sh
-   ```
-
-2. **Deploy to Heroku**
-   - Create Heroku app
-   - Connect GitHub repository
-   - Deploy
-
-### Option 3: Local Network Sharing
-
-```bash
-streamlit run streamlit_app.py --server.address 0.0.0.0
-```
-
 ## 📊 Data Sources
 
 The dashboard uses three main datasets:
@@ -158,15 +115,5 @@ For CSIT 553 coursework, converted to interactive dashboard.
 
 This project is for educational purposes. Data sourced from Airbnb public datasets.
 
-## 🚀 Next Steps
 
-1. **Deploy** using Streamlit Community Cloud
-2. **Share** the live URL in your portfolio
-3. **Document** the process and insights
-4. **Iterate** based on user feedback
-
----
-
-**Live Demo**: [Your deployed URL here]
-**Portfolio**: [Your portfolio link]
-**LinkedIn**: [Your LinkedIn profile]
+**Live Demo**: https://airbnb-rahul-app-ep3hwhtjgmony9o99rgkqs.streamlit.app/
